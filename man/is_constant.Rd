@@ -2,9 +2,12 @@
 % Please edit documentation in R/check_constant_columns.R
 \name{is_constant}
 \alias{is_constant}
-\title{Check if the input list is constant (excluding NA)}
+\alias{is_not_constant}
+\title{Check if the input is constant (excluding NA)}
 \usage{
 is_constant(var)
+
+is_not_constant(var)
 }
 \arguments{
 \item{var}{a vector, list, dataframe column}
@@ -13,10 +16,11 @@ is_constant(var)
 TRUE or FALSE
 }
 \description{
-Check if the input list is constant (excluding NA)
+Check if the input is constant (excluding NA)
 }
 \examples{
 is_constant(1:10)
+is_not_constant(1:10)
 
 
 }
