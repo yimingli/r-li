@@ -1,10 +1,15 @@
+#' Check if the input is constant (excluding NA)
+#'
+#' @param var a vector, list, dataframe column
+#'
+#' @return TRUE or FALSE
+#'
+#' @examples
+#' is_constant(1:10)
+#'
+#'
+#' @export
 is_constant <- function(var) {
-    # Check if a column is constant across all rows
-    # Use case: remove constant columns before modeling
-
-    # Input: a vector or list
-    # Output: TRUE or FALSE
-
     all(var == var[1], na.rm = TRUE)
 }
 
