@@ -13,7 +13,7 @@ get_mode(x)
 a scalar
 }
 \description{
-Get the mode (most frequent) of a vector
+If there is a tie, get the first one.
 }
 \examples{
 get_mode(c(1, 2, 2, 3))

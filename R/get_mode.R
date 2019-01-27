@@ -1,5 +1,7 @@
 #' Get the mode (most frequent) of a vector
 #'
+#' If there is a tie, get the first one.
+#'
 #' @param x a vector
 #'
 #' @return a scalar
